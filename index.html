@@ -8,11 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-            rel="shortcut icon"
-            href="logo.png"
-            type="image/x-icon"
-        />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <style>
         /* Variables et reset */
         :root {
@@ -543,6 +539,11 @@
                 max-width: 300px;
                 justify-content: center;
             }
+            
+            /* Supprimer les cercles verts sur mobile */
+            .timeline-content::after {
+                display: none;
+            }
         }
 
         @media (max-width: 576px) {
@@ -565,7 +566,7 @@
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
-            <a href="wissam.jpg" class="logo">Wissem <span>Hami</span></a>
+            <a href="#" class="logo">Wissem <span>Hami</span></a>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -603,9 +604,7 @@
                     <p>J'aime transformer les idées en solutions concrètes et innovantes, tout en continuant à apprendre et à perfectionner mes compétences chaque jour.</p>
                 </div>
                 <div class="about-image">
-                    <div class="profile-img-placeholder" style="width: 300px; height: 300px; background-color: var(--light-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.2rem;">
-                        Photo de profil
-                    </div>
+                    <img src="wissam.jpg" alt="Wissem Hami" class="profile-img">
                 </div>
             </div>
         </div>
